@@ -26,6 +26,17 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
+        /*
+         *  Sets the image full height
+         */
+        function fullSizeImage() {
+            var windowHeight = $(window).height();
+            $('.site-head').css('height', windowHeight);
+        }
+
+        fullSizeImage();
+
+
     });
 
 }(jQuery));
