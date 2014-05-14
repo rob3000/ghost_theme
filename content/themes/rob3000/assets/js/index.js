@@ -25,19 +25,26 @@
 
         casperFullImg();
         $(window).smartresize(casperFullImg);
+        $('.post-header').smartresize(casperFullImg);
 
-        /*
-         *  Sets the image full height
-         */
-        function fullSizeImage() {
-            var windowHeight = $(window).height();
-            $('.site-head').css('height', windowHeight);
+        var $postHeader = $('.content-hidden');
+        if($postHeader) {
+            var $imageUrl = $('.content-hidden img').attr('src');
+            $('.post-header').css('background-image', 'url(' + $imageUrl + ')');
         }
 
-        fullSizeImage();
 
 
     });
+    /*
+     *  Sets the image full height
+     */
+    function fullSizeImage() {
+        var windowHeight = $(window).height();
+        jQuery('.site-head').css('height', windowHeight);
+    }
+
+    fullSizeImage();
 
 }(jQuery));
 

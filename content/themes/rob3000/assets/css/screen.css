@@ -1522,15 +1522,46 @@ margin on the iframe, cause it breaks stuff. */
   height: 50px;
   display: inline-block;
 }
-/* line 10, ../sass/_custom.scss */
+/* line 11, ../sass/_custom.scss */
 .social .social-icon.git-hub {
   background: url("../images/github_square_black.png");
+  background-repeat: no-repeat;
 }
-/* line 13, ../sass/_custom.scss */
+/* line 15, ../sass/_custom.scss */
 .social .social-icon.twitter {
   background: url("../images/twitter_square_black.png");
+  background-repeat: no-repeat;
 }
-/* line 16, ../sass/_custom.scss */
+/* line 19, ../sass/_custom.scss */
 .social .social-icon.linked-in {
   background: url("../images/linkedin_square_black.png");
+  background-repeat: no-repeat;
+}
+
+/* line 26, ../sass/_custom.scss */
+.site-navigation ul {
+  display: table;
+  width: 700px;
+  margin: 0 auto;
+}
+/* line 30, ../sass/_custom.scss */
+.site-navigation ul .menu-nav {
+  display: table-cell;
+  text-align: center;
+}
+/* line 33, ../sass/_custom.scss */
+.site-navigation ul .menu-nav .nav-item {
+  text-decoration: none;
+}
+
+/* line 41, ../sass/_custom.scss */
+.blog-logo img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+/* line 48, ../sass/_custom.scss */
+.content-hidden {
+  display: none;
 }
